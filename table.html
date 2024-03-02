@@ -12,7 +12,7 @@
     <div class="p-5 h-screen">
         <h1 class="text-xl mb-2">Recent Updates from Tenants</h1>
 
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full absolute top-0 right-0 mt-4 mr-4">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full absolute top-0 right-0 mt-4 mr-4" id="button">
             Add Rental Info
         </button>
 
@@ -24,6 +24,7 @@
                         <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">Buiding name</th>
                         <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">Street No.</th>
                         <th class="w-32 p-3 text-sm font-semibold tracking-wide text-left">Rent</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide text-left">Phone</th>
                         <th class="p-3 text-sm font-semibold tracking-wide text-left">Details</th>
                     </tr>
                 </thead>
@@ -37,6 +38,7 @@
                             <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-green-800 bg-green-200 rounded-lg bg-opacity-50">Delivered</span>
                         </td>
                         <td class="p-3 text-sm text-gray-700 whitespace-nowrap">16/10/2021</td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">+1999217030</td>
                         <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$200.00</td>
                     </tr>
                     <tr class="bg-gray-50">
@@ -48,6 +50,7 @@
                             <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-yellow-800 bg-yellow-200 rounded-lg bg-opacity-50">Shipped</span>
                         </td>
                         <td class="p-3 text-sm text-gray-700 whitespace-nowrap">16/10/2021</td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">+1999217027</td>
                         <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$200.00</td>
                     </tr>
         
@@ -92,6 +95,11 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('button').addEventListener('click', function() {
+            window.location.href = 'form.html';
+        });
+    </script>
 </body>
 
 </html>
