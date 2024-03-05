@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="card.css">
+    <title>Event Card</title>
+</head>
+<!-- HTML -->
+<body>
+    <div class="card" id="eventCard">
+        <section class="top"></section>
+        <div class="event-info">
+            <p class="title" id="eventTitle"></p>
+
+            <div class="additional-info">
+                <p class="info" id="eventLocation"></p>
+                <p class="info" id="eventDateTime"></p>
+            </div>
+            <button class="action" id="bookButton">Going</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript
+        document.addEventListener("DOMContentLoaded", function () {
+            // Fetch event data from the server
+            fetchEventData().then(function (eventData) {
+                // Populate the event card with the fetched data
+                populateEventCard(eventData);
+            }).catch(function (error) {
+                console.error("Error fetching event data:", error);
+            });
+        });
+
+        function fetchEventData() {
+            // Make an AJAX request to fetch event data from the server
+            return fetch("url_to_your_server_script")
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error("Failed to fetch event data");
+                    }
+                    return response.json();
+                });
+        }
+
+        function populateEventCard(eventData) {
+            // Populate the event card with the fetched data
+            document.getElementById("eventTitle").textContent = eventData.title;
+            document.getElementById("eventLocation").textContent = "Location: " + eventData.location;
+            document.getElementById("eventDateTime").textContent = "Date & Time: " + eventData.date_time;
+        }
+
+        function bookEvent() {
+        var button = document.getElementById("bookButton");
+        button.textContent = "GOING!";
+        button.style.color = "red";
+        button.disabled = true;
+    }
+    </script>
+</body>
+</body>
+</html>
