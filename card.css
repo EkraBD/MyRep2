@@ -19,7 +19,7 @@ body {
     position: relative;
     width: 400px;
     height: 400px;
-    background: url(img/fire.jpg) no-repeat center;
+    background: url(fire.jpg) no-repeat center;
     background-size: cover;
     border-radius: 40px;
     overflow: hidden;
