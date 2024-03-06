@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T04:10:54.160Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="4fks-aUviUlg5TvUrRIC" version="24.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T09:36:55.418Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="WUdJiY6Kq-9hF7hRiC9K" version="24.0.2" type="github">
   <diagram name="Page-1" id="duAJXwrHxuTn-4ekxF2v">
     <mxGraphModel dx="1730" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,26 +7,11 @@
         <mxCell id="WwqeYVIEEZeU8fgSetGo-1" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Database_General.svg;" parent="1" vertex="1">
           <mxGeometry x="750" y="310" width="38" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-2" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.home;fillColor=#7FBA42;" parent="1" vertex="1">
-          <mxGeometry x="762.5" y="100" width="51" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-3" value="" style="sketch=0;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.databases.database_mini_2;fillColor=#7FBA42;" parent="1" vertex="1">
-          <mxGeometry x="660" y="70" width="35" height="42" as="geometry" />
-        </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-4" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.devices.laptop;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="580" y="120" width="58" height="34" as="geometry" />
-        </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-5" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.server_generic;fillColor=#2072B8;" parent="1" vertex="1">
-          <mxGeometry x="711.5" y="126" width="27" height="52" as="geometry" />
-        </mxCell>
         <mxCell id="WwqeYVIEEZeU8fgSetGo-6" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.user;fillColor=#7FBA42;" parent="1" vertex="1">
           <mxGeometry x="10" y="230" width="46" height="50" as="geometry" />
         </mxCell>
         <mxCell id="WwqeYVIEEZeU8fgSetGo-7" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.users;fillColor=#2072B8;" parent="1" vertex="1">
           <mxGeometry x="360" y="90" width="58" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-8" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Managed_Desktop.svg;" parent="1" vertex="1">
-          <mxGeometry x="650" y="160" width="50" height="36" as="geometry" />
         </mxCell>
         <mxCell id="WwqeYVIEEZeU8fgSetGo-9" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#A50040;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#d80073;shape=mxgraph.mscae.system_center.admin_console;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="360" y="345" width="74" height="60" as="geometry" />
@@ -54,26 +39,14 @@
         <mxCell id="WwqeYVIEEZeU8fgSetGo-16" value="Login" style="html=1;whiteSpace=wrap;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.login;" parent="1" vertex="1">
           <mxGeometry x="145" y="290" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-17" value="" style="shape=mxgraph.signs.food.restaurant_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
-          <mxGeometry x="600" y="216" width="35" height="98" as="geometry" />
-        </mxCell>
         <mxCell id="WwqeYVIEEZeU8fgSetGo-18" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/1015_beanch_umbrella_bench_enjoy_summer_australia_australian_independence-128.png" parent="1" vertex="1">
           <mxGeometry x="494" y="218" width="52" height="52" as="geometry" />
         </mxCell>
         <mxCell id="WwqeYVIEEZeU8fgSetGo-19" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/979_tea__cup_hot_coffee_pongal_festival-128.png" parent="1" vertex="1">
           <mxGeometry x="700" y="350" width="70" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-20" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/birthday-58/32/Icon-Extra-02-128.png" parent="1" vertex="1">
-          <mxGeometry x="612" y="370" width="88" height="88" as="geometry" />
-        </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-21" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/991_kite_festival_flying_pongal_festival-128.png" parent="1" vertex="1">
-          <mxGeometry x="520" y="56" width="70" height="70" as="geometry" />
-        </mxCell>
         <mxCell id="WwqeYVIEEZeU8fgSetGo-22" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/birthday-58/32/Icon-03-128.png" parent="1" vertex="1">
           <mxGeometry x="668.5" y="221" width="70" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="WwqeYVIEEZeU8fgSetGo-23" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/carnival-filled-line/32/carousel_entertainment_amusement_festival_carnival-128.png" parent="1" vertex="1">
-          <mxGeometry x="540" y="196" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="WwqeYVIEEZeU8fgSetGo-25" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=28;notch=0;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" parent="1" vertex="1">
           <mxGeometry x="60" y="240" width="60" height="30" as="geometry" />
@@ -108,8 +81,20 @@
         <mxCell id="WwqeYVIEEZeU8fgSetGo-43" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#00B336;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry y="70" width="460" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="bFMgYFNOpBBMiiVi0nn1-1" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.computer;pointerEvents=1;" vertex="1" parent="1">
+        <mxCell id="bFMgYFNOpBBMiiVi0nn1-1" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.computer;pointerEvents=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="250" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="yJTR7BHX85BgzQQCnHQf-2" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="520" width="310" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="yJTR7BHX85BgzQQCnHQf-3" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.servers.server_generic;fillColor=#2072B8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="587" width="50" height="80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="yJTR7BHX85BgzQQCnHQf-4" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Database_General.svg;" vertex="1" parent="1">
+          <mxGeometry x="460" y="590" width="58.9" height="77.5" as="geometry" />
+        </mxCell>
+        <mxCell id="yJTR7BHX85BgzQQCnHQf-5" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.twoWayArrow;dy=0.65;dx=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;" vertex="1" parent="1">
+          <mxGeometry x="390" y="615" width="60" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
