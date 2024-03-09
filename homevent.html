@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Practice</title>
+   <link rel="stylesheet" href="card.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
+  <body>
+    <div class="bg-[url('backg.png')] bg-center bg-cover w-screen h-screen" >
+      <nav class="flex items-center">
+        <ul class="flex-1 text-center">
+          <li class="list-none inline-block px-5 py-3">
+             <a href="#" class="no-underline text-white"> HOME</a>
+          </li>
+          <li class="list-none inline-block px-5 py-3">
+            <a href="#" class="no-underline text-white	"> ACCOMODATION </a>
+          </li>
+          <li class="list-none inline-block px-5 py-3">
+            <a href="#" class="no-underline text-white">  FOOD </a> 
+          </li>
+          <li class="list-none inline-block px-5 py-3">
+            <a href="#" class="no-underline text-white">  EVENTS</a> 
+          </li>
+          <li class="list-none inline-block px-5 py-3">
+            <a href="#" class="no-underline text-white"> ABOUT US</a>
+           </li>
+           <li class="list-none inline-block px-5 py-3">
+            <a href="#" class="no-underline text-white"> MyProfile </a>
+           </li>
+      </ul>
+      </nav>
+
+    <div class="text-white	 mt-20">
+      <h1 class="text-6xl font-bold leading-normal text-center">Probash-Bondhu</h1>
+      <p class="font-bold leading-normal text-center">Connecting via our roots,<br>
+       This is a community to help each other on a foreign land.<br>
+       In this community, feel free to help each other to acheive individual goals.</p>
+       
+    </div>
+    <div class="bg-[url('backg.png')] bg-center bg-cover w-screen h-100">
+      <br><br><br><br><br><br><br><br>
+      <h3 class="text-3xl font-semibold text-yellow-100 leading-normal text-center">Upcoming Events</h3>
+      <br><br>
+    </div>
+    
+    <div class="bg-[url('backg.png')] bg-center bg-cover w-screen h-screen">
+      <div class="card ml-20" id="eventCard">
+        <section class="top"></section>
+        <div class="event-info">
+            <p class="title" id="eventTitle"></p>
+
+            <div class="additional-info">
+                <p class="info" id="eventLocation"></p>
+                <p class="info" id="eventDateTime"></p>
+            </div>
+            <button class="action" id="bookButton">Going</button>
+        </div>
+    </div>
+    </div>
+      
+    </div>
+  </div>
+
+  <script>
+    // JavaScript
+    document.addEventListener("DOMContentLoaded", function () {
+        // Fetch event data from the server
+        fetchEventData().then(function (eventData) {
+            // Populate the event card with the fetched data
+            populateEventCard(eventData);
+        }).catch(function (error) {
+            console.error("Error fetching event data:", error);
+        });
+    });
+
+    function fetchEventData() {
+        // Make an AJAX request to fetch event data from the server
+        return fetch("url_to_your_server_script")
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error("Failed to fetch event data");
+                }
+                return response.json();
+            });
+    }
+
+    function populateEventCard(eventData) {
+        // Populate the event card with the fetched data
+        document.getElementById("eventTitle").textContent = eventData.title;
+        document.getElementById("eventLocation").textContent = "Location: " + eventData.location;
+        document.getElementById("eventDateTime").textContent = "Date & Time: " + eventData.date_time;
+    }
+
+    function bookEvent() {
+    var button = document.getElementById("bookButton");
+    button.textContent = "GOING!";
+    button.style.color = "red";
+    button.disabled = true;
+}
+</script>
+
+    
+
+    
+
+  </body>
+</html>
+
+
+
