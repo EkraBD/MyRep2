@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('img/bgm.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="p-5 h-screen">
+        <h4 class="text-center font-semibold text-xl mb-2">Upcoming Events</h4>
+
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full absolute top-0 right-0 mt-4 mr-4" id="button">
+            Create Event
+        </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full absolute top-0 right-0 mt-4 mr-44" id="Home">
+            Home
+        </button>
+
+        <div class="overflow-auto rounded-lg shadow hidden md:block">
+            <table class="w-full">
+                <thead class="bg-gray-50 border-b-2 border-gray-200">
+                    <tr>
+                        
+                        <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">Event name</th>
+                        <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">Place</th>
+                        <th class="w-32 p-3 text-sm font-semibold tracking-wide text-left">Time</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide text-left">Date</th>
+                        <th class="p-3 text-sm font-semibold tracking-wide text-left">City</th>
+                        
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr class="bg-gray-50">
+                        
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">Kring New Fit office chair</td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">7th</td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">16/10/2021</td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">+1999217027</td>
+                        <td class="p-3 text-sm text-gray-700 whitespace-nowrap">$200.00</td>
+                            
+                    </tr>        
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        
+        document.getElementById('button').addEventListener('click', function() {
+            window.location.href = 'eventform.html';// form link here
+        });
+
+        document.getElementById('Home').addEventListener('click', function() {
+            window.location.href = 'buttons.html';//homepage link here
+        });
+    </script>
+</body>
+
+</html>
