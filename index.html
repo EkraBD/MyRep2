@@ -1,73 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Login & Registration Form</title>
-  <!---Custom CSS File--->
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Set minimum height of the body to full viewport height */
+            position: relative;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            /* z-index: 2; */
+            margin-bottom: 90px; /* Add margin to the bottom to accommodate the footer */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            background-color: #33333340; /* Deep gray color for table header */
+        }
+
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            background-color: #f2f2f2de; /* Light gray color for table rows */
+        }
+
+        /* tbody tr:nth-child(odd) {
+           
+            background-color: #f2f2f2; 
+        } */
+
+        @media only screen and (max-width: 600px) {
+            input[type="text"] {
+                width: 100%;
+            }
+        }
+
+        /* Style for the button */
+        .top-right-button {
+            position: absolute;
+            top: 20px;
+            right: 46px;
+            margin: 12px ;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2; /* Ensure the button is above other content */
+        }
+
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <input type="checkbox" id="check">
-    <div class="login form">
-      <header>Login</header>
-      <form action="#">
-        <input type="text" placeholder="Enter your email">
-        <input type="password" placeholder="Enter your password">
-        <a href="#">Forgot password?</a>
-        <input type="button" class="button" value="Login">
-      </form>
-      <div class="signup">
-        <span class="signup">Don't have an account?
-         <label for="check">Signup</label>
-        </span>
-      </div>
+    <!-- Button added here -->
+    <button  id="button" class="top-right-button">Log is as admin</button>
+
+    <div class="container">
+        <h1>Find Restaurants Near You</h1>
+        <form id="searchForm">
+            <input type="text" id="location" name="location" placeholder="Enter your location">
+            <input type="submit" value="Search">
+        </form>
+        <table id="restaurantTable">
+            <thead>
+                <tr>
+                    <th>Restaurant Name</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody id="restaurantList">
+                <tr>
+                    <td>Restaurant A</td>
+                    <td>123 Main St</td>
+                </tr>
+                <tr>
+                    <td>Restaurant B</td>
+                    <td>456 Elm St</td>
+                </tr>
+                <tr>
+                    <td>Restaurant C</td>
+                    <td>789 Oak St</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="registration form">
-      <header>Signup</header>
-      <form action="#">
-        <input type="text" placeholder="Username">
-        <input type="text" placeholder="Enter your email">
-        <select id="country" name="country">
-          <option value="" disabled selected>Select your country</option>
-          <option value="USA">United States</option>
-          <option value="Canada">Canada</option>
-          <option value="UK">United Kingdom</option>
-          <!-- Add more options as needed -->
-        </select>
-        <select id="country" name="country">
-          <option value="" disabled selected>Select your State</option>
-          <option value="USA">Texas</option>
-          <option value="Canada">Florida</option>
-          <option value="UK">Washington</option>
-          <!-- Add more options as needed -->
-        </select>
-        <select id="country" name="country">
-          <option value="" disabled selected>Select your City</option>
-          <option value="USA">Dallas</option>
-          <option value="Canada">San Antonio</option>
-          <option value="UK">Miami</option>
-          <!-- Add more options as needed -->
-        </select>
-        <select id="country" name="country">
-          <option value="" disabled selected>Joining as</option>
-          <option value="Admin">Admin</option>
-          <option value="Member">Member</option>
-          <!-- Add more options as needed -->
-        </select>
-        <input type="tel" placeholder="Enter Phone Number">
-        <input type="password" placeholder="Create a password">
-        <input type="password" placeholder="Confirm your password">
-        <input type="button" class="button" value="Signup">
-      </form>
-      <div class="signup">
-        <span class="signup">Already have an account?
-         <label for="check">Login</label>
-        </span>
-      </div>
-    </div>
-  </div>
+
+    <script>
+        const searchForm = document.getElementById('searchForm');
+        const restaurantTable = document.getElementById('restaurantTable');
+        const restaurantList = document.getElementById('restaurantList');
+
+        const restaurants = [
+            { name: 'Restaurant A', location: '123 Main St' },
+            { name: 'Restaurant B', location: '456 Elm St' },
+            { name: 'Restaurant C', location: '789 Oak St' }
+        ];
+
+        renderRestaurants(restaurants);
+
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const location = document.getElementById('location').value;
+            const filteredRestaurants = restaurants.filter(restaurant => restaurant.location.toLowerCase().includes(location.toLowerCase()));
+            renderRestaurants(filteredRestaurants);
+        });
+
+        function renderRestaurants(restaurants) {
+            restaurantList.innerHTML = '';
+            restaurants.forEach(restaurant => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${restaurant.name}</td><td>${restaurant.location}</td>`;
+                restaurantList.appendChild(tr);
+            });
+        }
+        document.getElementById('button').addEventListener('click', function() {
+            window.location.href = 'form3.html';
+        });
+    </script>
 </body>
+
 </html>
