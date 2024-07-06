@@ -40,3 +40,26 @@ body{
     text-align: center;
     color: bisque;
 }
+.button{
+    color: black;
+    background: white;
+    font-size: 1.0rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .relative {
+    position: relative;
+  }
+  .superscript-number {
+    position: absolute;
+    top: 2px;  
+    /* right: 2px; */
+    color: white; 
+    border-radius: 20%; 
+    padding: 0.5px 0.5px; 
+    font-size: 0.75rem; 
+    font-weight: bold; 
+}
